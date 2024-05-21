@@ -1,0 +1,321 @@
+<!-- this is ripped off from a w3schools tutorial - a responsive layout that kind of has the elements to it that I want. The links on the left can be navigation/anchor links to parts of the page, and on the right I can have an overview/bio. This should work for when I expand to multiple pages as well, I think. WOrth fiddling with I think. -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Green Moss Mushrooms - all things mycology. Mushroom hunting, cultivation, ecology and more."/>
+    <!-- Import Averia from google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Averia+Libre:400,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre:400,700,800", rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles_experiment.css">
+    <title>Green Moss Mushrooms</title>
+  </head>
+</head>
+<body>
+
+<div class="banner">
+  <h1><img src="Green-Moss-Mushrooms-Logo-20fps.gif", width=300px, height=300px></h1>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+    <a href="#">Link 4</a>
+  </div>
+
+  <div class="main">
+    <div class="blog", title="Mushroom hunting">
+    </div>
+    <div class="blog", title="Mushroom cultivation">
+    </div>
+    <!-- try a gallery as a list using some code from a webpage -->
+    <div class="gallery_div", title="gallery">
+      <ul class="gallery" role="list">
+        <li>
+          <figure>
+            <a href="./gallery/2024-01-07-002.webp", target="_blank"><img alt="" src="./gallery/2024-01-07-002.webp", title="Stereum hirsutum" /></a>
+            <figcaption>Stereum hirsutum</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <a href="./gallery/2024-01-07-001.webp", target="_blank"><img alt="" src="./gallery/2024-01-07-001.webp", title="Trametes versicolor" /></a>
+            <figcaption>Trametes versicolor</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <a href="./gallery/2023-12-10-002.webp", target="_blank"><img alt="" src="./gallery/2023-12-10-002.webp", title="Mycena sp." /></a>s
+            <figcaption>Mycena sp.</figcaption>
+          </figure>
+        </li>
+        
+        <li>
+          <figure>  
+            <a href="./gallery/2023-12-10-001.webp", target="_blank"><img src="./gallery/2023-12-10-001.webp", title="Mycena sp."></a>
+            <figcaption>Mycena sp.</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>  
+            <a href="./gallery/2023-12-02-002.webp", target="_blank"><img src="./gallery/2023-12-02-002.webp", title="Amanita muscaria"></a>
+            <figcaption>Amanita muscaria</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>  
+            <a href="./gallery/2023-12-02-001.webp", target="_blank"><img src="./gallery/2023-12-02-001.webp", title="Trametes versicolor"></a>
+            <figcaption>Trametes versicolor</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>  
+            <a href="./gallery/2023-11-05-001.webp", target="_blank"><img src="./gallery/2023-11-05-001.webp", title="Amanita muscaria"></a>
+            <figcaption>Amanita muscaria</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>  
+            <a href="./gallery/2023-10-27-001.webp", target="_blank"><img src="./gallery/2023-10-27-001.webp", title="Stereum hirsutum"></a>
+            <figcaption>Stereum hirsutum</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>  
+            <a href="./gallery/2023-10-14-001.webp", target="_blank"><img src="./gallery/2023-10-14-001.webp", title="Mycena haematopus"></a>
+            <figcaption>Mycena haematopus</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>  
+            <a href="./gallery/2023-10-06-001.webp", target="_blank"><img src="./gallery/2023-10-06-001.webp", title="Phaelous schweinitzii"></a>
+            <figcaption>Phaelous schweintzii</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>  
+            <a href="./gallery/2023-10-01-002.webp", target="_blank"><img src="./gallery/2023-10-01-002.webp", title="Fistulina hepatica"></a>
+            <figcaption>Fistulina hepatica</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>  
+            <a href="./gallery/2023-10-01-001.webp", target="_blank"><img src="./gallery/2023-10-01-001.webp", title="Daedaleopsis confragrosa"></a>
+            <figcaption>Daedaleopsis confragrosa</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>  
+            <a href="./gallery/2023-08-28-001.webp", target="_blank"><img src="./gallery/2023-08-28-001.webp", title="Hypholoma fasciculare"></a>
+            <figcaption>Hypholoma fasciculare</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>  
+            <a href="./gallery/2023-08-20-001.webp", target="_blank"><img src="./gallery/2023-08-20-001.webp", title="Asterophora parasitica"></a>
+            <figcaption>Asterophora parasitica</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>  
+            <a href="./gallery/2023-08-02-001.webp", target="_blank"><img src="./gallery/2023-08-02-001.webp", title="Amanita rubescens"></a>
+            <figcaption>Amanita rubescens</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>  
+            <a href="./gallery/2022-11-26-001.webp", target="_blank"><img src="./gallery/2022-11-26-001.webp", title="Ascocoyne sarcoides"></a>
+            <figcaption>Ascocoyne sarcoides</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>  
+            <a href="./gallery/2022-11-13-001.webp", target="_blank"><img src="./gallery/2022-11-13-001.webp", title="Ceratiomyxa fruticulosa"></a>
+            <figcaption>Ceratiomyxa fruticulosa</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>  
+            <a href="./gallery/2022-10-29-002.webp", target="_blank"><img src="./gallery/2022-10-29-002.webp", title="Panaeolus papilionaceus"></a>
+            <figcaption>Panaeolus papilionaceus</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>  
+            <a href="./gallery/2022-10-29-001.webp", target="_blank"><img src="./gallery/2022-10-29-001.webp", title="Craterellus cornucopioides"></a>
+            <figcaption>Craterellus cornucopioides</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>  
+            <a href="./gallery/2022-10-28-002.webp", target="_blank"><img src="./gallery/2022-10-28-002.webp", title="Pholiota sqaurrosa"></a>
+            <figcaption>Pholiota sqaurrosa</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>  
+            <a href="./gallery/2022-10-19-002.webp", target="_blank"><img src="./gallery/2022-10-19-002.webp", title="Clathrus archeri"></a>
+            <figcaption>Clathrus archeri</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>  
+            <a href="./gallery/2022-10-19-001.webp", target="_blank"><img src="./gallery/2022-10-19-001.webp", title="Clathrus archeri"></a>
+            <figcaption>Clathrus archeri</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>  
+            <a href="./gallery/2022-10-16-001.webp", target="_blank"><img src="./gallery/2022-10-16-001.webp", title="Gyromitra infula(?)"></a>
+            <figcaption>Gyromitra infula(?)</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>  
+            <a href="./gallery/2022-10-15-004.webp", target="_blank"><img src="./gallery/2022-10-15-004.webp", title="Kuehneromyces mutabilis"></a>
+            <figcaption>Kuehneromyces mutabilis</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>  
+            <a href="./gallery/2022-10-15-003.webp", target="_blank"><img src="./gallery/2022-10-15-003.webp", title="Coprinopsis atramentaria"></a>
+            <figcaption>Coprinopsis atramentaria</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>  
+            <a href="./gallery/2022-10-15-002.webp", target="_blank"><img src="./gallery/2022-10-15-002.webp", title="Cortinarius brunneus(?)"></a>
+            <figcaption>Cortinarius brunneus(?)</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>  
+            <a href="./gallery/2022-10-15-001.webp", target="_blank"><img src="./gallery/2022-10-15-001.webp", title="Leotia lubrica"></a>
+            <figcaption>Leotia lubrica</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>  
+            <a href="./gallery/2022-10-09-001.webp", target="_blank"><img src="./gallery/2022-10-09-001.webp", title="Clathrus archeri"></a>
+            <figcaption>Clathrus archeri</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>  
+            <a href="./gallery/2022-10-06-004.webp", target="_blank"><img src="./gallery/2022-10-06-004.webp", title="Amanita ceciliae"></a>
+            <figcaption>Amanita ceciliae</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>  
+            <a href="./gallery/2022-10-06-003.webp", target="_blank"><img src="./gallery/2022-10-06-003.webp", title="Cortinarius (Telamonia?) sp."></a>
+            <figcaption>Cortinarius (Telamonia?) sp.</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>  
+            <a href="./gallery/2022-10-06-002.webp", target="_blank"><img src="./gallery/2022-10-06-002.webp", title="Boletaceae"></a>
+            <figcaption>Boletaceae</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>  
+            <a href="./gallery/2022-10-06-001.webp", target="_blank"><img src="./gallery/2022-10-06-001.webp", title="Inocybe?"></a>
+            <figcaption>Inocybe?</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>  
+            <a href="./gallery/2022-10-03-003.webp", target="_blank"><img src="./gallery/2022-10-03-003.webp", title="Amanita fulva"></a>
+            <figcaption>Amanita fulva</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>  
+            <a href="./gallery/2022-10-03-002.webp", target="_blank"><img src="./gallery/2022-10-03-002.webp", title="Amanita fulva"></a>
+            <figcaption>Amanita fulva</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>  
+            <a href="./gallery/2022-10-03-001.webp", target="_blank"><img src="./gallery/2022-10-03-001.webp", title="Amanita fulva"></a>
+            <figcaption>Amanita fulva</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>  
+            <a href="./gallery/2022-10-02-001.webp", target="_blank"><img src="./gallery/2022-10-02-001.webp", title="Bulgaria inquinans"></a>
+            <figcaption>Bulgaria inquinans</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>  
+            <a href="./gallery/2022-10-01-002.webp", target="_blank"><img src="./gallery/2022-10-01-002.webp", title="Cortinarius violaceus"></a>
+            <figcaption>Cortinarius violaceus</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>  
+            <a href="./gallery/2022-10-01-001.webp", target="_blank"><img src="./gallery/2022-10-01-001.webp", title="Amanita muscaria"></a>
+            <figcaption>Amanita muscaria</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>  
+            <a href="./gallery/2022-09-26-001.webp", target="_blank"><img src="./gallery/2022-09-26-001.webp", title="Boletus edulis"></a>
+            <figcaption>Boletus edulis</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>  
+            <a href="./gallery/2022-09-25-003.webp", target="_blank"><img src="./gallery/2022-09-25-003.webp", title="Lactarius torminosus"></a>
+            <figcaption>Lactarius torminosus</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>  
+            <a href="./gallery/2022-09-25-002.webp", target="_blank"><img src="./gallery/2022-09-25-002.webp", title="Amanita muscaria"></a>
+            <figcaption>Amanita muscaria</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>  
+            <a href="./gallery/2022-09-25-001.webp", target="_blank"><img src="./gallery/2022-09-25-001.webp", title="Amanita muscaria"></a>
+            <figcaption>Amanita muscaria</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>  
+            <a href="./gallery/2022-09-24-002.webp", target="_blank"><img src="./gallery/2022-09-24-002.webp", title="Lactarius quietus"></a>
+            <figcaption>Lactarius quietus</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>  
+            <a href="./gallery/2022-09-24-001.webp", target="_blank"><img src="./gallery/2022-09-24-001.webp", title="Imleria badia"></a>
+            <figcaption>Imleria badia</figcaption>
+        </figure> 
+        <li>
+          <figure>
+            <a href="./gallery/2022-09-09-001.webp", target="_blank"><img src="./gallery/2022-09-09-001.webp", title="Fomitopsis betulina"></a>
+            <figcaption>Fomitopsis betulina</figcaption>
+          </figure>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="right">
+    <h2>About</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+  </div>
+</div>
+
+<div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">© copyright Henry Ferguson-Gow</div>
+
+</body>
+</html>
