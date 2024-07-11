@@ -1,4 +1,4 @@
-<!-- this is ripped off from a w3schools tutorial - a responsive layout that kind of has the elements to it that I want. The links on the left can be navigation/anchor links to parts of the page, and on the right I can have an overview/bio. This should work for when I expand to multiple pages as well, I think. WOrth fiddling with I think. -->
+<!-- TODO. The head of the page needs to be displayed differently on mobile. The images in the gallery preview need to be smaller when displayed on mobile (two columns? Smaller for sure though) -->
 
 <!DOCTYPE html>
 <html>
@@ -9,39 +9,40 @@
     <!-- Import Averia from google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Averia+Libre:400,700,800" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre:400,700,800", rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="styles_experiment.css">
+    <link rel="stylesheet" type="text/css" href="styles_2.css">
     <title>Green Moss Mushrooms</title>
   </head>
 </head>
 <body>
 
-<header class="header">
-  <img src="Green-Moss-Mushrooms-Logo-20fps.gif", width=250px, height=250px, alt="logo", class="logo">
-  <nav class="menu">
-    <ul class="navlist">
-      <li class="navitem"><a href="#">Link 1</a></li>
-      <li class="navitem"><a href="#">Link 2</a></li>
-      <li class="navitem"><a href="#">Link 3</a></li>
-      <li class="navitem"><a href="#">Link 4</a></li>
-    </ul>
-  </nav>
-</header>
+<div class="page-outer">
 
-<div style="overflow:auto">
-  <div class="menu">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
-    <a href="#">Link 4</a>
-  </div>
+  <div class="page-content">
+    
+    <div class="content-top">
 
-  <div class="main">
-    <div class="blog", title="Mushroom hunting">
+      <div class="top-logo">
+        <a href="/" title="" class="logo"><img src="Green-Moss-Mushrooms-Logo-20fps.gif", width=180px, height=180px, alt="logo", class="logo"></a>
+      </div>
+
+      <div class="title" id="top-title">
+        Green Moss Mushrooms
+      </div>
+
+      <div class="nav">
+        <a href="/" title="Gallery">Home</a>
+        &nbsp;
+        <a href="/gallery" title="Gallery">Gallery</a>
+        &nbsp;
+        <a href="/links" title="Gallery">Links</a>
+        &nbsp;
+        <a href="/about" title="About">About</a>
+        &nbsp;
+      </div>
     </div>
-    <div class="blog", title="Mushroom cultivation">
-    </div>
-    <!-- try a gallery as a list using some code from a webpage -->
-    <div class="gallery_div", title="gallery">
+
+    <div class="section" id="gallery">
+      <h2> Gallery </h2>
       <ul class="gallery" role="list">
         <li>
           <figure>
@@ -314,13 +315,11 @@
           </figure>
         </li>
       </ul>
+
     </div>
+
   </div>
 
-  <div class="right">
-    <h2>About</h2>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-  </div>
 </div>
 
 <div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">© copyright Henry Ferguson-Gow</div>

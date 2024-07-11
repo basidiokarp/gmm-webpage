@@ -3,79 +3,53 @@
   font-family: "Averia Libre", sans-serif;
 }
 
-h1, h2 {
-  text-align: center;
+.page-outer {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.page-content {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.content-top {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.content-top > div {
+  align-self: center;
+}
+
+#top-title {
   font-family: "Averia Serif Libre", serif;
   font-weight: 900;
+  font-size: 2em;
 }
 
-.header {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 60px;
+#preamble {
+  
 }
 
-.navlist {
-  display: grid;
-  grid-auto-flow: column;
-  list-style-type: none;
-  column-gap: 20px;
-  padding: 0;
+div, p, section {
+  position: relative;
+  overflow: visible;
+    overflow-x: visible;
+    overflow-y: visible;
 }
 
-.navitem {
-  width: min-content;
-  white-space: nowrap;
+h2 {
+  margin-top: 2em;
+  line-height: 1.2;
+  border-bottom: .5px solid #000;
 }
 
-.banner {
-  background-color:#e5e5e5;
-  padding:15px;
-  text-align:center;
-  width: 100%;
-}
-
-.menu {
-  float: left;
-  width: 8%;
-  text-align: center;
-}
-
-.menu a {
-  background-color: #e5e5e5;
-  padding: 8px;
-  margin-top: 7px;
-  display: block;
-  width: 100%;
-  color: black;
-}
-
-.main {
-  float: left;
-  width: 77%;
-  padding: 0 20px;
-}
-
-.right {
-  background-color: #e5e5e5;
-  float: left;
-  width: 15%;
-  padding: 15px;
-  margin-top: 7px;
-  text-align: center;
-}
-
-@media only screen and (max-width: 620px) {
-  /* For mobile phones: */
-  .menu, .main, .right {
-    width: 100%;
-  }
-  .banner img {
-    width:200px; 
-    height:200px;
-  }
+#gallery-link {
+  float: right;
 }
 
 /* styles for gallery */
@@ -93,11 +67,11 @@ h1, h2 {
 }
 
 @media (min-width: 900px) {
-  .gallery { grid-template-columns: repeat(3, 1fr); }
+  .gallery { grid-template-columns: repeat(4, 1fr); }
 }
 
 @media (min-width: 10000px) {
-  .gallery { grid-template-columns: repeat(4, 1fr); }
+  .gallery { grid-template-columns: repeat(5, 1fr); }
 }
 
 .gallery img {
@@ -155,4 +129,20 @@ h1, h2 {
 .gallery figure:hover figcaption,
 .gallery figure:focus figcaption {
   transform: translateY(0);
+}
+
+.text-body {
+  max-width: 648px;
+  min-width: 320px;
+  margin: 4em 4em 2em 222px;
+}
+
+.testing {
+  background: url() blue;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-size: auto;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
 }
